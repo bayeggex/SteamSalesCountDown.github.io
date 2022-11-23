@@ -1,0 +1,27 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.dalga {
+  background-color: rgb(0, 128, 255);
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+.dalgah1  {
+  font-size: 6rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dalga p {
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 5rem 0 5rem;
+}
+
+.dalga svg {
+  display: block;
+}
+.dalga.yukari {
+  background-color: #fff;
+}
