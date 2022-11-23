@@ -6,6 +6,38 @@
     <title>Testing</title>
 </head>
 <body>
+    <!--Zamanlayıcı-->
+    body{
+        font-family: 'Brush Script MT', cursive;
+    }
+    <p id="days"></p>
+    <p id="hours"></p>
+    <p id="mins"></p>
+    <p id="secs"></p>
+    <h2 id="end"></h2>
+<script>
+    var countDownDate = new Date("Jul 25, 2023 16:37:52").getTime();
+    var myfunc = setInterval(function() {
+    var now = new Date().getTime();
+    var timeleft = countDownDate - now;
+    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+    document.getElementById("days").innerHTML = days + "d "
+    document.getElementById("hours").innerHTML = hours + "h " 
+    document.getElementById("mins").innerHTML = minutes + "m " 
+    document.getElementById("secs").innerHTML = seconds + "s " 
+    if (timeleft < 0) {
+        clearInterval(myfunc);
+        document.getElementById("days").innerHTML = ""
+        document.getElementById("hours").innerHTML = "" 
+        document.getElementById("mins").innerHTML = ""
+        document.getElementById("secs").innerHTML = ""
+        document.getElementById("end").innerHTML = "Sale Time";
+    }
+    }, 1000);
+    </script>
     <div class="dalga yukari">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 290"><path fill="#00adee" fill-opacity="1" d="M0,192L40,192C80,192,160,192,240,181.3C320,171,400,149,480,154.7C560,160,640,192,720,181.3C800,171,880,117,960,117.3C1040,117,1120,171,1200,176C1280,181,1360,139,1400,117.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
     <div class="dalga">
@@ -13,7 +45,5 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In orci lorem, porttitor nec vulputate sit amet, fermentum a purus....</p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 290"><path fill="#fff" fill-opacity="1" d="M0,192L40,192C80,192,160,192,240,181.3C320,171,400,149,480,154.7C560,160,640,192,720,181.3C800,171,880,117,960,117.3C1040,117,1120,171,1200,176C1280,181,1360,139,1400,117.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
     </div>
-
-      
 </body>
 </html>
