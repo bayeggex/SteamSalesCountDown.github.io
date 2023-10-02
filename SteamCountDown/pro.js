@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const indirimler = [
-        { baslangic: '2024-01-01T12:00:00Z', bitis: '2024-01-15T23:59:59Z', bilgi: 'Yaz İndirimi: %30 İndirim!' },
-        { baslangic: '2024-02-01T12:00:00Z', bitis: '2024-02-15T23:59:59Z', bilgi: 'Kişi İndirimi: Ekstra %10 İndirim!' },
+    { baslangic: '2023-10-09T12:00:00Z', bitis: '2023-10-16T23:59:59Z', bilgi: 'Next Fest: October 2023' },
+    { baslangic: '2023-10-26T12:00:00Z', bitis: '2023-11-02T23:59:59Z', bilgi: 'Scream Fest' },
+    { baslangic: '2023-11-21T12:00:00Z', bitis: '2023-11-28T23:59:59Z', bilgi: 'Autumn Sale 2023' },
+    { baslangic: '2023-12-21T12:00:00Z', bitis: '2024-01-04T23:59:59Z', bilgi: 'Winter Sale 2023' },
     ];
 
     const simdikiIndirim = indirimler.find(indirim => new Date(indirim.baslangic).getTime() > new Date().getTime());
@@ -22,13 +24,19 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('timer').innerHTML = `${gun} gün ${saat} saat ${dakika} dakika ${saniye} saniye`;
             document.getElementById('indirimBilgisi').innerHTML = `${simdikiIndirim.bilgi} - Bitiş Tarihi: ${simdikiIndirim.bitis}`;
 
+
+            if (kalanSure < 5){
+                clearInterval(interval)
+                document.getElementById("timer").innerHTML = "indirimlerin başlamasına çok az kaldı!✌️"
+            }
+
             if (kalanSure < 0) {
                 clearInterval(interval);
-                document.getElementById('timer').innerHTML = 'İndirim Başladı!';
+                document.getElementById('timer').innerHTML = 'İndirim Başladı!🎉';          
             }
         }, 1000);
     } else {
-        document.getElementById('timer').innerHTML = 'Şu anda bir indirim yok.';
+        document.getElementById('timer').innerHTML = 'Şu anda bir indirim yok📦. veya sistem güncel değil🤖';
     }
 });
 
