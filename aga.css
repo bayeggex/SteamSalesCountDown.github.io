@@ -3,14 +3,22 @@ body {
     padding: 0;
     font-family: 'Arial', sans-serif;
 }
-.Ilk {
-    display: flex;
-    flex-direction: column; /* İçeriği dikeyde hizalamak için gerekli */
+/*
+eğer img bulunamaz ise bu gelsin ( img bulunamadı gibi )
+vede şey bunlar fazla büyük nasıl küçülcez? 3 ders bunla uğraştım
 
-    align-items: center; /* Yatayda ortala */
-    margin-top: 5rem; /* 10 piksel aşağıda */
-    height: calc(100vh - 10px); /* Ekstra 10 piksellik boşluk bırak */
+:default image{
+
 }
+*/
+
+#img{
+    image-rendering: auto;
+}
+
+
+
+
 .section {
     height: 100vh;
     display: flex;
@@ -21,11 +29,13 @@ body {
 }
 
 #section1 {
-    background-color: #f2f2f2;
+    background: linear-gradient(-45deg, #7d7d7d, #ffffff,#7d7d7d);
+    background-size: auto;
+
 }
 
 .countdown {
-    padding: 20px;
+    padding: 2em;
 }
 
 #timer {
@@ -44,18 +54,32 @@ body {
     left: 0;
     z-index: -1;
 }
-
 #section2 {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 1000% 1%;
+    flex-direction: row;
     animation: gradient 15s ease infinite;
 }
+
 
 #section3 {
     background-color: #333;
     color: #fff;
     position: relative;
 }
+
+#section4 {
+    font-size: 2em;
+    background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+    background-size: auto;
+}
+
+#section5 {
+    font-size: 2em;
+    background: linear-gradient(-135deg, #23a6d5, #23d5ab);
+    background-size: auto;
+}
+
 
 .content {
     padding: 20px;
@@ -71,6 +95,11 @@ body {
     color: #fff;
     padding: 10px;
 }
+
+.img{
+   border-radius: 1cap;
+}
+
 
 .loading-screen {
     display: flex;

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('indirimBilgisi').innerHTML = `${simdikiIndirim.bilgi} - Bitiş Tarihi: ${simdikiIndirim.bitis}`;
 
 
-            if (kalanSure < 5){
+            if (kalanSure < 8){
                 clearInterval(interval)
                 document.getElementById("timer").innerHTML = "indirimlerin başlamasına çok az kaldı!✌️"
             }
