@@ -4,26 +4,13 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+
 /* Add media queries for responsive design */
-@media (max-width: 768px) {
-    #timer {
-        font-size: 4em;
-    }
-
-    /* Make images responsive */
-    img {
-        max-width: 10%;
-        height: auto;
-    }
-
-    /* Resize the specific images to 512x512 */
-    #img img {
-        max-width: 512px;
-        height: auto;
-    }
+img
+{
+    max-width: 40%;
+    max-height: auto;
 }
-
-
 
 
 .section {
@@ -46,7 +33,7 @@ body {
 }
 
 #timer {
-    font-size: 6em; /* Timer metin boyutunu ayarlayın */
+    font-size: 100%; /* Timer metin boyutunu ayarlayın */
     margin-top: 20px;
 }
 
