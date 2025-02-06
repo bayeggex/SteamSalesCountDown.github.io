@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b2838;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #171a21;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#countdown {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #66c0f4;
+}
+
+h2 {
+    color: #66c0f4;
+    margin-bottom: 15px;
+}
+
+#featuredDeal {
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 80%;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 60%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+}
+
+#searchBtn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background: #66c0f4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#searchBtn:hover {
+    background: #417a9b;
+}
+
+.game-card {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.featured {
+    border: 2px solid #66c0f4;
+    width: 250px;
+}
+
+.glow {
+    box-shadow: 0 0 20px 5px rgba(102, 192, 244, 0.7);
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.discount-badge {
+    background: red;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    top: -10px;
+}
+
+.game-info h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.price-link {
+    display: block;
+    background: #66c0f4;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.price-link:hover {
+    background: #417a9b;
+}
+
+.original-price {
+    font-size: 14px;
+    color: #ff6961;
+    margin-right: 5px;
+}
+
+.final-price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#salesHistory {
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #66c0f4;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.sale-card {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.sale-card h3 {
+    margin: 0 0 10px;
+    color: #66c0f4;
+}
+
+.sale-card p {
+    margin: 5px 0;
+}
+
+.sale-status.live {
+    color: #66c0f4;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #171a21;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
